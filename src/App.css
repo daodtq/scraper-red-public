@@ -1,0 +1,182 @@
+/* Định dạng cho phần tiêu đề */
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  /* Căn giữa tiêu đề */
+}
+.gradient-text {
+  background: linear-gradient(45deg, #ff5733, #96a2ff); /* Gradient colors */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Đặt màu chữ trở thành trong suốt */
+}
+
+.tabs{
+  text-align: center;
+}
+
+/* Định dạng cho phần chính của ứng dụng */
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Căn giữa nội dung ứng dụng */
+  justify-content: center;
+
+}
+
+.centered-box {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Định dạng cho trường nhập liệu */
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  max-width: 400px;
+  /* Giới hạn độ rộng của trường nhập liệu */
+}
+
+/* Định dạng cho các trường nhập liệu và nút */
+TextField,
+Button {
+  margin: 10px;
+  max-width: 400px;
+  /* Giới hạn độ rộng của trường nhập liệu và nút */
+}
+
+/* Định dạng cho nút "Xuất" */
+Button {
+  background-color: #0073e6;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* Hiệu ứng chuyển đổi màu nền */
+}
+
+Button:hover {
+  background-color: #005bbb;
+  /* Màu nền khi di chuột qua nút */
+}
+
+/* Định dạng cho trường nhập liệu */
+
+/* Định dạng cho nội dung của các trường nhập liệu */
+.MuiInputBase-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Định dạng cho nhãn của trường nhập liệu */
+.MuiInputLabel-root {
+  color: #333;
+}
+
+/* Định dạng cho đường viền khi trường nhập liệu được tập trung */
+.Mui-focused {
+  border-color: #0073e6;
+  e: \Nodejs + React\Front-End - Copy\.env
+}
+
+/* Thiết lập kiểu cho phần giới tính */
+.gender {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Thiết lập kiểu cho danh sách sản phẩm của Nam */
+.male {
+  border-radius: 10px;
+  background-color: #b3e0ff;
+  border: 1px solid #3498db;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  width: 225;
+}
+
+.male h2 {
+  color: #3498db;
+  margin: -10px;
+  margin-bottom: -20px;
+}
+
+.male ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Thiết lập kiểu cho danh sách sản phẩm của Nữ */
+.female {
+  border-radius: 10px;
+  background-color: #ffc4d8;
+  border: 1px solid #db3498;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 225;
+}
+
+.female h2 {
+  color: #db3498;
+  margin: -10px;
+  margin-bottom: -20px;
+}
+
+.female ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+.App {
+  background-color: hsla(200, 40%, 30%, .4);
+  background-image:
+    url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'),
+    url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+    url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+  background-repeat: repeat-x;
+  background-position:
+    0 20%,
+    0 100%,
+    0 50%,
+    0 100%,
+    0 0;
+  background-size:
+    2500px,
+    800px,
+    500px 200px,
+    1000px,
+    400px 260px;
+  animation: 50s para infinite linear;
+}
+
+@keyframes para {
+  100% {
+    background-position:
+      -5000px 20%,
+      -800px 95%,
+      500px 50%,
+      1000px 100%,
+      400px 0;
+  }
+}
